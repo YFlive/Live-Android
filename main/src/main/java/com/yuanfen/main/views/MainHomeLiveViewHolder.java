@@ -304,7 +304,7 @@ public class MainHomeLiveViewHolder extends AbsMainHomeChildViewHolder implement
                         if (bean != null) {
                             String link = bean.getLink();
                             if (!TextUtils.isEmpty(link)) {
-                                WebViewActivity.forward(mContext, link, false);
+                                WebViewActivity.forward(mContext, link, false,false);
                             }
                         }
                     }

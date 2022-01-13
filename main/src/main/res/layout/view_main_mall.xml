@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:hint="@string/mall_387"
+            android:hint="请输入你要搜索的游戏名称"
             android:paddingLeft="10dp"
             android:paddingRight="15dp"
             android:singleLine="true"
@@ -46,8 +46,31 @@
 
     <com.yuanfen.common.custom.CommonRefreshView
         android:id="@+id/refreshView"
+        android:visibility="gone"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/orange_game" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏"
+            android:textSize="17sp" />
+
+    </LinearLayout>
 
 
 </LinearLayout>

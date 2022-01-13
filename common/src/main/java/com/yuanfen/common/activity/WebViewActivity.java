@@ -52,6 +52,10 @@ public class WebViewActivity extends AbsActivity {
     @Override
     protected void main() {
         String url = getIntent().getStringExtra(Constants.URL);
+        boolean fullScreen=getIntent().getBooleanExtra(Constants.FULL_SCREEN,false);
+        if (fullScreen) {
+            findViewById(R.id.fl_top).setVisibility(View.GONE);
+        }
         L.e("H5--->" + url);
         LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
         mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
@@ -230,7 +234,7 @@ public class WebViewActivity extends AbsActivity {
         return false;
     }
 
-    public static void forward(Context context, String url, boolean addArgs) {
+    public static void forward(Context context, String url, boolean addArgs,boolean fullScreen) {
         if (addArgs) {
             if (!url.contains("?")) {
                 url = StringUtil.contact(url, "?");
@@ -239,12 +243,14 @@ public class WebViewActivity extends AbsActivity {
         }
         Intent intent = new Intent(context, WebViewActivity.class);
         intent.putExtra(Constants.URL, url);
+        intent.putExtra(Constants.FULL_SCREEN, fullScreen);
         context.startActivity(intent);
     }
 
     public static void forward(Context context, String url) {
-        forward(context, url, true);
+        forward(context, url, true,true);
     }
+
 
     @Override
     protected void onDestroy() {

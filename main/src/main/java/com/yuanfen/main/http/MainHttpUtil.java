@@ -720,6 +720,17 @@ public class MainHttpUtil {
                 .execute(callback);
     }
 
+    /**
+     * 点赞动态
+     */
+    public static void getGameUrl( HttpCallback callback) {
+        String uid = CommonAppConfig.getInstance().getUid();
+        HttpClient.getInstance().get("Lottery.Login", MainHttpConsts.ACTIVE_ADD_LIKE)
+                .params("uid", uid)
+                .params("token", CommonAppConfig.getInstance().getToken())
+                .execute(callback);
+    }
+
 
     /**
      * 获取举报动态内容列表

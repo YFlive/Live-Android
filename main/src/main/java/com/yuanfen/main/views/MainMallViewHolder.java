@@ -1,13 +1,15 @@
 package com.yuanfen.main.views;
 
 import android.content.Context;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import  androidx.recyclerview.widget.RecyclerView;;
+import androidx.recyclerview.widget.RecyclerView;;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.ImageView;
 
 import com.alibaba.fastjson.JSON;
@@ -21,6 +23,7 @@ import com.yuanfen.common.custom.CommonRefreshView;
 import com.yuanfen.common.custom.ItemDecoration;
 import com.yuanfen.common.glide.ImgLoader;
 import com.yuanfen.common.http.HttpCallback;
+import com.yuanfen.common.http.HttpClient;
 import com.yuanfen.common.interfaces.OnItemClickListener;
 import com.yuanfen.common.utils.DpUtil;
 import com.yuanfen.main.R;
@@ -51,6 +54,7 @@ public class MainMallViewHolder extends AbsMainViewHolder implements OnItemClick
     private RecyclerView mRecyclerViewClass;
     private boolean mClassShowed;
     private View mScrollIndicator;
+    private View ll_game;
     private int mDp25;
 
     public MainMallViewHolder(Context context, ViewGroup parentView) {
@@ -59,16 +63,31 @@ public class MainMallViewHolder extends AbsMainViewHolder implements OnItemClick
 
     @Override
     protected int getLayoutId() {
-       return R.layout.view_main_mall;
+        return R.layout.view_main_mall;
 
     }
 
     @Override
     public void init() {
         setStatusHeight();
-        findViewById(R.id.btn_search).setOnClickListener(this);
+       // findViewById(R.id.btn_search).setOnClickListener(this);
         mRefreshView = findViewById(R.id.refreshView);
         mRefreshView.setEmptyLayoutId(R.layout.view_no_data_main_mall);
+        findViewById(R.id.ll_game).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainHttpUtil.getGameUrl(new HttpCallback() {
+                    @Override
+                    public void onSuccess(int code, String msg, String[] info) {
+                        if (info.length != 0) {
+                            JSONObject obj = JSON.parseObject(info[0]);
+                            String url = obj.getString("url");
+                            WebViewActivity.forward(mContext, url,false,false);
+                        }
+                    }
+                });
+            }
+        });
         GridLayoutManager gridLayoutManager = new GridLayoutManager(mContext, 2, GridLayoutManager.VERTICAL, false);
         gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
@@ -161,7 +180,7 @@ public class MainMallViewHolder extends AbsMainViewHolder implements OnItemClick
                         if (bean != null) {
                             String link = bean.getLink();
                             if (!TextUtils.isEmpty(link)) {
-                                WebViewActivity.forward(mContext, link, false);
+                                WebViewActivity.forward(mContext, link, false,false);
                             }
                         }
                     }

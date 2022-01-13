@@ -6,6 +6,7 @@ package com.yuanfen.common;
 
 public class Constants {
     public static final String URL = "url";
+    public static final String FULL_SCREEN = "fullScreen";
     public static final String PAYLOAD = "payload";
     public static final String SEX = "sex";
     public static final String NICK_NAME = "nickname";
