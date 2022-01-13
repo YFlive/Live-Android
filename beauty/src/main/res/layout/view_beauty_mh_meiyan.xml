@@ -52,7 +52,7 @@
                     android:background="@color/mh_gray2"
                      />
 
-                <android.support.v4.view.ViewPager
+                <androidx.viewpager.widget.ViewPager
                     android:id="@+id/mh_meiyan_viewPager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
