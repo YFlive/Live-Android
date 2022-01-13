@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuanfen.live">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.yuanfen.live.activity.LiveAnchorActivity"
+            android:configChanges="screenLayout|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveAudienceActivity"
+            android:configChanges="screenLayout|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveChooseClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveAddImpressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveContributeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveGuardListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveRecordPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.RoomManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.RoomManageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveAdminListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveShutUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveBlackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.activity.LiveGoodsAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.live.floatwindow.FloatPermissionActivity"
+            android:screenOrientation="portrait" />
+
+        <!--Android 9.0移除了apache的HttpClient，而金山sdk中用到了这个，不加这个的话在Android 9.0会崩溃-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

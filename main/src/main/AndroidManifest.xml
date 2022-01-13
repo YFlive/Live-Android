@@ -1,0 +1,147 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuanfen.main">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.yuanfen.main.activity.LoginInvalidActivity"
+            android:theme="@style/dialog2" />
+        <activity
+            android:name="com.yuanfen.main.activity.LoginActivity"
+            android:theme="@style/LauncherAppTheme"
+           />
+        <activity
+            android:name="com.yuanfen.main.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.UserHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.FollowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.EditSexActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.EditNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.EditSignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.MyImpressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.MyCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.MyVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.MyProfitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.CashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.LiveClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ModifyPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.FindPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ThreeDistributActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.main.activity.ActivePubActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.MyActiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ActiveVideoPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ActiveReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ActiveDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.yuanfen.main.activity.ActiveVideoRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.CancelAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.CancelConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.RankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.MallClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.MallSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.DailyTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ActiveAllTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ActiveChooseTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ActiveTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ActiveSearchTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.LiveRecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.ChooseCountryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.AuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.FamilyApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.LiveVoiceRoomListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.main.activity.FamilyActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+</manifest>

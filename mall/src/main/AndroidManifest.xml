@@ -1,0 +1,178 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuanfen.mall">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.ShopApplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.ManageClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.ShopApplyBondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.ShopApplyResultActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.ChooseGoodsClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerAddGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerManageGoodsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsOutSideDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsEditSpecActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.ShopDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.ShopCertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerAddressEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerAddressActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerAddressEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.yuanfen.mall.activity.ShopHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsRecordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsMakeOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerSendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerCommentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerCommentAppendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerRefundApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerRefundDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerRefundDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerRejectRefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerRefundOfficialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.BuyerCashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerCashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.PayContentActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.PayContentActivity2"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yuanfen.mall.activity.PayContentPubActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.PayContentClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.PayContentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.OrderMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsAddOutSideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.GoodsCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SetManageClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yuanfen.mall.activity.SellerAddPlatActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

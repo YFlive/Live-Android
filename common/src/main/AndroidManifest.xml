@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.yuanfen.common">
+
+    <application
+        android:allowBackup="true"
+        >
+        <activity
+            android:name="com.yuanfen.common.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <!--Android 7.0 拍照要用这个-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.yuanfen.phonelive.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+
+        <!--支付宝-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <!--支付宝 end-->
+
+
+        <activity android:name="com.yuanfen.common.activity.ChooseImageActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.yuanfen.common.activity.ChooseVideoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.yuanfen.common.activity.ChooseLocationActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.yuanfen.phonelive.braintree" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

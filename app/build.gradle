@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    signingConfigs {
+        release {
+            keyAlias 'yuanfen'
+            keyPassword 'yuanfen'
+            storeFile file('../yuanfen.jks')
+            storePassword 'yuanfen'
+        }
+    }
+
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        applicationId "com.yuanfen.phonelive"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion 28
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //直播
+    api project(':main')
+    //短视频
+    api project(':video')
+}

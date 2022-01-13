@@ -1,0 +1,31 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 23,
+            targetSdkVersion : 28,
+            versionCode      : 127,
+            versionName      : "7.2.0"
+    ]
+
+    manifestPlaceholders = [
+            serverHost       : "https://api.yuanfen.tv",
+
+            //极光推送 IM
+            jpushAppKey      : "1f7644c72f0b3bc8691eaaec",
+
+            //腾讯地图
+            txMapAppKey      : "ZMTBZ-XQVEW-BCRR7-RJQFG-6NJGJ-URBRX",
+            txMapAppSecret   : "tUlqjyiKRY4328AWXKlPusxX94IGGF",
+            //腾讯bugly
+            buglyAppId       : "2d366543c3",
+            //百度语音识别
+            baiduAppId       : "25475726",
+            baiduAppKey      : "5cI4wxm5Gek2aM1pEvI82Lxg",
+            baiduAppSecretKey: "xzVTEhfHOY15cCzz0AzLl8BRHlZ79h4w ",
+            //友盟统计
+            umengAppKey      : "61d9564ee0f9bb492bc2fff2"
+
+    ]
+
+}
